@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("effectcup.KaznacheyPayment")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription(".NET API for payment system Kaznachey (http://kaznachey.ua)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("effectcup")]
 [assembly: AssemblyProduct("effectcup.KaznacheyPayment")]
 [assembly: AssemblyCopyright("Copyright © effectcup 2013")]
 [assembly: AssemblyTrademark("")]
