@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "effectcup.KaznacheyPayment", "effectcup.KaznacheyPayment\effectcup.KaznacheyPayment.csproj", "{4046E6C4-B151-47C9-9076-16E13F0CEC14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "effectcup.KaznacheyPayment.IntegrationTests", "effectcup.KaznacheyPayment.IntegrationTests\effectcup.KaznacheyPayment.IntegrationTests.csproj", "{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Live|Any CPU = Live|Any CPU
+		Local|Any CPU = Local|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Live|Any CPU.ActiveCfg = Live|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Live|Any CPU.Build.0 = Live|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Local|Any CPU.Build.0 = Local|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Release|Any CPU.ActiveCfg = Staging|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Release|Any CPU.Build.0 = Staging|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Live|Any CPU.ActiveCfg = Live|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Live|Any CPU.Build.0 = Live|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Local|Any CPU.Build.0 = Local|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{07D58A36-0C9B-4D61-B6B6-AA20AEEE6C4C}.Staging|Any CPU.Build.0 = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
