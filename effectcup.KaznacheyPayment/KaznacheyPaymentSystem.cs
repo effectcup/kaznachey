@@ -88,14 +88,14 @@ namespace effectcup.KaznacheyPayment
                 productsCount += product.ProductItemsNum;
             }
 
-            var signatureString = merchantGuid.ToString("D") +
+            var signatureString = merchantGuid.ToString("D").ToUpper() +
                                   totalSumm.ToString("F2", NumberFormatInfo.InvariantInfo) +
                                   productsCount.ToString("F2", NumberFormatInfo.InvariantInfo) +
                                   payment.PaymentDetails.MerchantInternalUserId +
                                   payment.PaymentDetails.MerchantInternalPaymentId +
                                   payment.SelectedPaySystemId + merchantSecretKey;
 
-            return signatureString.ToUpper().GetMd5Hash();
+            return signatureString.GetMd5Hash();
         }
     }
 }

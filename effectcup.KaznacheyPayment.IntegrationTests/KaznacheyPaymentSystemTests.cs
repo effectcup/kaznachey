@@ -34,6 +34,8 @@ namespace effectcup.KaznacheyPayment.IntegrationTests
         [TestMethod]
         public void CreatePayment()
         {
+            var merchantInternalPaymentId = new Guid("{36D4E2A4-81E2-4622-9F4E-7EDEF28682B9}").ToString();
+            var merchantInternalUserId = new Guid("{8841F897-867D-4540-A360-A6E9C3C3DC33}").ToString();
             var data = new PaymentRequest(1)
                 {
                     Products = new List<Product>
@@ -42,14 +44,14 @@ namespace effectcup.KaznacheyPayment.IntegrationTests
                                 {
                                     ProductItemsNum = 1,
                                     ProductName = "Модель танка Т34-85 ",
-                                    ProductId = "123",
+                                    ProductId = new Guid("{0029D9E3-0ABC-40D4-BDE1-6467A83B4464}").ToString(),
                                     ProductPrice = 500
                                 },
                             new Product
                                 {
                                     ProductItemsNum = 2,
                                     ProductName = "Модель танка Т34-76 ",
-                                    ProductId = "124",
+                                    ProductId = new Guid("{6F5D38D9-18D2-4B90-8FF7-F04D47F0324C}").ToString(),
                                     ProductPrice = 400
                                 }
                         },
@@ -61,7 +63,11 @@ namespace effectcup.KaznacheyPayment.IntegrationTests
                                     FieldValue = "somemail@gmail.com"
                                 }
                         },
-                    PaymentDetails = new PaymentDetails { MerchantInternalUserId ="21", MerchantInternalPaymentId = "1234"}
+                    PaymentDetails = new PaymentDetails
+                        {
+                            MerchantInternalUserId = merchantInternalUserId,
+                            MerchantInternalPaymentId = merchantInternalPaymentId
+                        }
                 };
 
             var response = kaznacheyPaymentSystem.CreatePayment(data);
