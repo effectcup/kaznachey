@@ -36,12 +36,14 @@ namespace effectcup.KaznacheyPayment
 
         private static IRestRequest CreateRequest(string resource)
         {
-            return new RestRequest
+            var request = new RestRequest
             {
                 Resource = resource,
                 Method = Method.POST,
                 RequestFormat = DataFormat.Json
             };
+            request.JsonSerializer.ContentType = "application/json; charset=utf-8";
+            return request;
         }
 
         private T Execute<T>(IRestRequest request) where T : new()
