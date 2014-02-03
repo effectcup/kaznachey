@@ -1,8 +1,14 @@
-﻿namespace effectcup.KaznacheyPayment
+﻿using System;
+
+namespace effectcup.KaznacheyPayment
 {
+
     public interface IPaymentSystem
     {
-        MerchantInformation GetMerchantInformation();
-        PaymentResponse CreatePayment(PaymentRequest payment);
+        MerchantInfoResponse GetMerchantInformation();
+
+        CreatePaymentResponse CreatePayment(PaymentRequest payment);
+
+        Boolean ValidateResponse(PaymentResponse resp);
     }
 }

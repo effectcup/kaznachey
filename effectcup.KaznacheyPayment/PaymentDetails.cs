@@ -1,33 +1,63 @@
-﻿namespace effectcup.KaznacheyPayment
+﻿using System;
+
+namespace effectcup.KaznacheyPayment
 {
+    /// <summary>
+    /// Payment details
+    /// </summary>
     public class PaymentDetails
     {
-        public string MerchantInternalPaymentId { get; set; }
+        /// <summary>
+        /// Merchant cms internal payment id
+        /// </summary>
+        public String MerchantInternalPaymentId { get; set; }
 
-        public string MerchantInternalUserId { get; set; }
+        /// <summary>
+        /// Merchant internal user id
+        /// </summary>
+        public String MerchantInternalUserId { get; set; }
 
-        public string CustomMerchantInfo { get; set; }
+        /// <summary>
+        /// Client email. Required
+        /// </summary>
+        public String EMail { get; set; }
 
-        public string StatusUrl { get; set; }
+        /// <summary>
+        /// Client phone number. Required
+        /// </summary>
+        public String PhoneNumber { get; set; }
 
-        public string ReturnUrl { get; set; }
+        /// <summary>
+        /// Merchant cms custom information
+        /// </summary>
+        public String CustomMerchantInfo { get; set; }
 
-        public string BuyerLastname { get; set; }
-        public string BuyerFirstname { get; set; }
-        public string BuyerPatronymic { get; set; }
-        public string BuyerStreet { get; set; }
-        public string BuyerCity { get; set; }
-        public string BuyerZone { get; set; }
-        public string BuyerZip { get; set; }
-        public string BuyerCountry { get; set; }
+        /// <summary>
+        /// Status URL. Used for status delivery
+        /// </summary>
+        public String StatusUrl { get; set; }
 
-        public string DeliveryLastname { get; set; }
-        public string DeliveryFirstname { get; set; }
-        public string DeliveryPatronymic { get; set; }
-        public string DeliveryStreet { get; set; }
-        public string DeliveryCity { get; set; }
-        public string DeliveryZone { get; set; }
-        public string DeliveryZip { get; set; }
-        public string DeliveryCountry { get; set; }
+        /// <summary>
+        /// Return Url. User will be redirected here after payment processing
+        /// </summary>
+        public String ReturnUrl { get; set; }
+
+        public String BuyerLastname { get; set; }
+        public String BuyerFirstname { get; set; }
+        public String BuyerPatronymic { get; set; }
+        public String BuyerStreet { get; set; }
+        public String BuyerCity { get; set; }
+        public String BuyerZone { get; set; }
+        public String BuyerZip { get; set; }
+        public String BuyerCountry { get; set; }
+
+        public String DeliveryLastname { get; set; }
+        public String DeliveryFirstname { get; set; }
+        public String DeliveryPatronymic { get; set; }
+        public String DeliveryStreet { get; set; }
+        public String DeliveryCity { get; set; }
+        public String DeliveryZone { get; set; }
+        public String DeliveryZip { get; set; }
+        public String DeliveryCountry { get; set; }
     }
 }

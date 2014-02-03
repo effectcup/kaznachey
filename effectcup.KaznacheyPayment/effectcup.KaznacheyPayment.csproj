@@ -60,16 +60,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Field.cs" />
-    <Compile Include="FieldInfo.cs" />
+    <Compile Include="BaseResponse.cs" />
     <Compile Include="IPaymentSystem.cs" />
     <Compile Include="KaznacheyPaymentSystem.cs" />
-    <Compile Include="Merchant.cs" />
-    <Compile Include="MerchantInformation.cs" />
+    <Compile Include="MerchantInfoResponse.cs" />
     <Compile Include="PaymentDetails.cs" />
     <Compile Include="PaymentRequest.cs" />
+    <Compile Include="CreatePaymentResponse.cs" />
     <Compile Include="PaymentResponse.cs" />
-    <Compile Include="PaymentResult.cs" />
     <Compile Include="PaySystem.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

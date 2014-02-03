@@ -1,13 +1,27 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace effectcup.KaznacheyPayment
 {
+    /// <summary>
+    /// Payment system information
+    /// </summary>
     public class PaySystem
     {
-        public int Id { get; set; }
+        /// <summary>
+        /// Payment system Id
+        /// </summary>
+        public Int32 Id { get; set; }
 
-        public string PaySystemName { get; set; }
+        /// <summary>
+        /// Payment system name
+        /// </summary>
+        public String PaySystemName { get; set; }
 
-        public List<FieldInfo> Fields { get; set; }
+
+        /// <summary>
+        /// Payment system tag(use for css style). Sample: webMoney,VisaMc,liqPay, etc
+        /// </summary>
+        public String PaySystemTag { get; set; }
     }
 }

@@ -1,13 +1,35 @@
-﻿namespace effectcup.KaznacheyPayment
+﻿using System;
+
+namespace effectcup.KaznacheyPayment
 {
+    /// <summary>
+    /// Product info
+    /// </summary>
     public class Product
     {
-        public double ProductItemsNum { get; set; }
+        /// <summary>
+        /// Product items num
+        /// </summary>
+        public Decimal ProductItemsNum { get; set; }
 
-        public string ProductName { get; set; }
+        /// <summary>
+        /// Product image url
+        /// </summary>
+        public String ImageUrl { get; set; }
 
-        public decimal ProductPrice { get; set; }
+        /// <summary>
+        /// Product name
+        /// </summary>
+        public String ProductName { get; set; }
 
-        public string ProductId { get; set; }
+        /// <summary>
+        /// Product price
+        /// </summary>
+        public Decimal ProductPrice { get; set; }
+
+        /// <summary>
+        /// Merchants cms product unique id
+        /// </summary>
+        public String ProductId { get; set; }
     }
 }
